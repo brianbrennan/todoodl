@@ -4,7 +4,7 @@ export default class Page extends Component {
     render() {
         return (
             <div className='Page'>
-                <h1>Page 1</h1>
+                <h1>Hey WeShare Team! I'm a web / native app hybrid</h1>
             </div>
         );
     }
