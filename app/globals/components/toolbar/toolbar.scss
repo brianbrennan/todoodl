@@ -4,14 +4,14 @@
 
     .close-button {
         color: black;
-        padding: 15px;
+        padding: $tny;
         position: absolute;
         right:0;
         top: 0;
         cursor: pointer;
 
         &:hover {
-            background-color: red;
+            background-color: $red;
             color: white;
         }
     }
