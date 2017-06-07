@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Toolbar from './../globals/components/toolbar/Toolbar';
+
 import './../globals/scss/style.scss';
 
 class App extends React.Component {
-
     render() {
         return (
-            <h1>Test9</h1>
+            <div className="appWrapper">
+                <Toolbar />
+
+            </div>
         );
     }
 }

@@ -11,8 +11,12 @@ function createWindow () {
     win = new BrowserWindow({
         width: 800,
         height: 600,
-        icon: __dirname + '/icon.png'
+        icon: __dirname + '/icon.png',
+        frame: false
     });
+
+    //get rid of default browser menu
+    //win.setMenu(null);
 
     // and load the index.html of the app.
     win.loadURL(url.format({
