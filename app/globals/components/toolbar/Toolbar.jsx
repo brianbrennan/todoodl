@@ -1,12 +1,18 @@
 import React from 'react';
-const electron = window.require('electron');
+import { remote } from 'electron';
 
-//const currentWindow = electron.remote.getCurrentWindow();
+const currentWindow = remote.getCurrentWindow();
 
 export default class Toolbar extends React.Component {
     render() {
         return (
             <div className="global-toolbar">
+                <div className="minimize-button" onClick={this.minimizeApp}>
+                    _
+                </div>
+                <div className="maximize-button" onClick={this.maximizeApp}>
+                    &#9633;
+                </div>
                 <div className="close-button" onClick={this.closeApp}>
                     X
                 </div>
@@ -14,7 +20,17 @@ export default class Toolbar extends React.Component {
         );
     }
 
-    static closeApp() {
-        console.log('test');
+    minimizeApp() {
+        currentWindow.minimize();
     }
+
+    maximizeApp() {
+        currentWindow.maximize();
+    }
+
+    closeApp() {
+        currentWindow.close();
+    }
+
+
 }

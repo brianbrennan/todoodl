@@ -38,8 +38,6 @@ module.exports = {
     },
 
     plugins: [HTMLWebpackPluginConfig],
-    
-    node: {
-        fs: 'empty'
-    }
+
+    target: 'electron'
 };

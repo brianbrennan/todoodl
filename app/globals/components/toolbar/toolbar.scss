@@ -2,6 +2,34 @@
     width: 100%;
     position: relative;
 
+	.minimize-button {
+		color: black;
+		padding: $tny;
+		position: absolute;
+		right: $lg;
+		top: 0;
+		cursor: pointer;
+
+		&:hover {
+			background-color: grey;
+			color: black;
+		}
+	}
+
+	.maximize-button {
+		color: black;
+		padding: $tny;
+		position: absolute;
+		right:$med;
+		top: 0;
+		cursor: pointer;
+
+		&:hover {
+			background-color: grey;
+			color: black;
+		}
+	}
+
     .close-button {
         color: black;
         padding: $tny;
