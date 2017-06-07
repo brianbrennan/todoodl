@@ -7,30 +7,32 @@ export default class Toolbar extends React.Component {
     render() {
         return (
             <div className="global-toolbar">
-                <div className="minimize-button" onClick={this.minimizeApp}>
+                <div className="minimize-button" onClick={Toolbar.minimizeApp}>
                     _
                 </div>
-                <div className="maximize-button" onClick={this.maximizeApp}>
+                <div className="maximize-button" onClick={Toolbar.maximizeApp}>
                     &#9633;
                 </div>
-                <div className="close-button" onClick={this.closeApp}>
+                <div className="close-button" onClick={Toolbar.closeApp}>
                     X
                 </div>
             </div>
         );
     }
 
-    minimizeApp() {
+    static minimizeApp() {
         currentWindow.minimize();
     }
 
-    maximizeApp() {
-        currentWindow.maximize();
+    static maximizeApp() {
+        if(currentWindow.isMaximized()) {
+            currentWindow.unmaximize();
+        } else {
+            currentWindow.maximize();
+        }
     }
 
-    closeApp() {
+    static closeApp() {
         currentWindow.close();
     }
-
-
 }
