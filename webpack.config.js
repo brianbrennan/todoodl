@@ -37,5 +37,7 @@ module.exports = {
         extensions: ['.js', '.jsx', '.json']
     },
 
-    plugins: [HTMLWebpackPluginConfig]
+    plugins: [HTMLWebpackPluginConfig],
+
+    watch: true
 };

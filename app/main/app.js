@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Menu from './../globals/components/menu/Menu';
-import Page from './../globals/components/pages/Page';
 
 import './../globals/scss/style.scss';
 
+class App extends React.Component {
+
+    render() {
+        return (
+            <h1>Test9</h1>
+        );
+    }
+}
+
 ReactDOM.render(
-    <div className="app-wrapper">
-        <Page></Page>
-    </div>,
+    <App />,
     document.getElementById('app')
 );
