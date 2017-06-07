@@ -38,6 +38,8 @@ module.exports = {
     },
 
     plugins: [HTMLWebpackPluginConfig],
-
-    watch: true
+    
+    node: {
+        fs: 'empty'
+    }
 };
