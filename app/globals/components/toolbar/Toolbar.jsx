@@ -6,7 +6,7 @@ const currentWindow = remote.getCurrentWindow();
 export default class Toolbar extends React.Component {
     render() {
         return (
-            <div className="global-toolbar">
+            <div className="global-toolbar" id="globalToolbar">
                 <div className="minimize-button" onClick={Toolbar.minimizeApp}>
                     _
                 </div>

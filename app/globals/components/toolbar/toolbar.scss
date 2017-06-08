@@ -1,6 +1,12 @@
 .global-toolbar {
+	height: $med;
     width: 100%;
     position: relative;
+	-webkit-app-region: drag;
+
+	div {
+		-webkit-app-region: no-drag;
+	}
 
 	.minimize-button {
 		color: black;
