@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Toolbar from './../globals/components/toolbar/Toolbar';
-//import Submission from './../submission/Submission';
+import Submission from './../submission/Submission';
 
 import './../globals/scss/style.scss';
 
@@ -11,6 +11,7 @@ class App extends React.Component {
         return (
             <div className="appWrapper">
                 <Toolbar />
+                <Submission />
             </div>
         );
     }
