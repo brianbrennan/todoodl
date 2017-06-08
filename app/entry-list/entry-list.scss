@@ -1,0 +1,11 @@
+.entry-list {
+	width: 200px;
+	border-right: 2px solid black;
+	resize: horizontal;
+	float: left;
+
+	.entry-in-list {
+		padding: $sm $tny;
+		background-color: lightblue;
+	}
+}

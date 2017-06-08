@@ -7,7 +7,9 @@ export default class EntryList extends React.Component {
 
         entries = entries.map(function(entry) {
             return(
-                <h1>{entry.title}</h1>
+                <div className="entry-in-list">
+                    <h1>{entry.title}</h1>
+                </div>
             );
         });
 
