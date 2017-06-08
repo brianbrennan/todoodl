@@ -1,6 +1,7 @@
 [
   {
-    "title": "Entry 1"
+    "title": "Entry 1",
+    "description": "This is a test description"
   },
   {
     "title": "Entry 2"
